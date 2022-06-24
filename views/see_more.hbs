@@ -1,0 +1,17 @@
+<div>
+    <img src="{{response.image}}" alt="{{response.title}}">
+</div>
+<div>
+    
+    <a href="/movies">Go Atras </a>
+  <h3>{{response.title}}</h3>
+  <h4>Director:{{response.director}}</h4>
+  <h5>Stars</h5>
+  <ul>
+  {{#each response.stars}} {{!--itera sobre el array, el this indica cada elemento adentro del array--}} 
+    <li>{{this}}</li>
+  {{/each}}
+  </ul>
+  <p>{{response.description}}</p>
+  <p>{{response.showtimes}}</p>
+</div>
