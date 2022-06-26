@@ -1,5 +1,12 @@
+<div>
+    <h1>Ironhack Cinema</h1>
+    <h3>Click on movie to check the showtimes</h3>
+</div>
+<div id="pelis">
 {{#each moviesFromApi}}
-<h1>{{title}}</h1>
 <img src="{{image}}" alt="{{title}}">
-<a href="/details/{{id}}">see mas</a>
+<h1>{{title}}</h1>
+<button><a href="/details/{{id}}">see mas</a></button>
+
 {{/each}}
+</div>

@@ -13,5 +13,8 @@
   {{/each}}
   </ul>
   <p>{{response.description}}</p>
-  <p>{{response.showtimes}}</p>
+  
+  {{#each response.showtimes}}
+  <span>{{this}} |</span>
+  {{/each}}
 </div>
